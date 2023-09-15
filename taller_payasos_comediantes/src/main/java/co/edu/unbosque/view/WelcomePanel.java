@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 public class WelcomePanel extends JFrame{
 	
-	private JLabel font;
+	private JLabel background;
 	private JButton bclown;
 	private JButton bcomedian;
 	private JButton bcontinue;
@@ -23,14 +23,14 @@ public class WelcomePanel extends JFrame{
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setResizable(false);
 		
-		font= new JLabel();
-		font.setBounds(0, 0,1000, 650);
-		ImageIcon fond=new ImageIcon("holaaaaaaaaaa");
-	    font.setIcon(new ImageIcon(fond.getImage().getScaledInstance(1000, 650, Image.SCALE_DEFAULT)));
+		background= new JLabel();
+		background.setBounds(0, 0,1000, 650);
+		ImageIcon fond=new ImageIcon("src/co/edu/unbosque/view/resources/WelcomePanel.jpg");
+		background.setIcon(new ImageIcon(fond.getImage().getScaledInstance(1000, 650, Image.SCALE_DEFAULT)));
 	    
 	    component();
 	    
-	    add(font);
+	    add(background);
 	}
 	
 	
